@@ -26,7 +26,7 @@ def run_model(**data):
     external_id = get_asset_response['data']['assets'][0]['externalId']
 
     if category_schema is None:
-        bbox_obj = [{"bounding-box": {"x": 20, "y": 30, "width": 50, "height": 60}}]
+        bbox_obj = [{"bounding-box": {"x": 200, "y": 300, "width": 150, "height": 160}}]
         annotation_json = {"externalId": external_id,
                            "objects": bbox_obj, "classifications": [], "relations": []}
     else:
